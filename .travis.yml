@@ -17,12 +17,12 @@ script:
 # docker run -it --rm ruby bash
 # gem install travis
 # travis encrypt -r ome/zeroc-ice-py-ubuntu1604 $GITHUB_KEY
-#deploy:
-#  provider: releases
-#  api_key:
-#    secure: "IaxZzFrRhg4csyAYea82nItAiQX/mqz2NFqMvPXcel5RAQp1IPJ3NVAzKwa10A0bX9bvrJy1Zrf4Ax2cAxu/ba3R2O/Q1Xsu37a4RznByMcPkJfmWcZiC2iA3hYxg680dE6dDkAKyFrEYq1o4QGQX9y7X3Vk9rliPOtIIquINRmTQBWyWzymlhq/FQ+lWhk55r/EUNLN7oa/xGIMm0OGmBOOKwV843e8foNn4bXOuH1wLdm6iv/Sr1Ff7sVIc2gipCG5jMEwjQx3d5qJHsbzotl4bfeq+Gtvyby8nltcg+lqtq+pGKqkFEl7HBEykqEMZC1AcvPALgXbvGoA+9uoquZQrmYbM/vRZ/yCsGQRRWZhlFL6OwHG4z3MkT5fZRf1K1je/rnQ/UduYHI9zdqeJyW1vbfBY7h4DqxCYc50MUCCpQGUCdPj30LQi6+jGB9Y/+NDhiGje/PW2xI1cpw6bOTp7A0AVWoZbF3Zn2oMUbK+E7edGZvslRXPGQjUd4utjAtSVu7QTeDiQGFGE8acoMTylfw7EBVB7AuJ51yJYYE0/UwRZT/0niBoADGP/o8CmDP8AHgXr/ykrh7ToBgebjHP1vQDA/lHcNHIH1cZ2RwAz2JCwHQJFqTEZNHJ2kF9nNINE+kcxWXqSCfaz9/oT+Ew8dLanbaQJuKxdVWzJZs="
-#  file_glob: true
-#  file: dist/zeroc*
-#  skip_cleanup: true
-#  on:
-#    tags: true
+deploy:
+  provider: releases
+  api_key:
+    secure: "IaxZzFrRhg4csyAYea82nItAiQX/mqz2NFqMvPXcel5RAQp1IPJ3NVAzKwa10A0bX9bvrJy1Zrf4Ax2cAxu/ba3R2O/Q1Xsu37a4RznByMcPkJfmWcZiC2iA3hYxg680dE6dDkAKyFrEYq1o4QGQX9y7X3Vk9rliPOtIIquINRmTQBWyWzymlhq/FQ+lWhk55r/EUNLN7oa/xGIMm0OGmBOOKwV843e8foNn4bXOuH1wLdm6iv/Sr1Ff7sVIc2gipCG5jMEwjQx3d5qJHsbzotl4bfeq+Gtvyby8nltcg+lqtq+pGKqkFEl7HBEykqEMZC1AcvPALgXbvGoA+9uoquZQrmYbM/vRZ/yCsGQRRWZhlFL6OwHG4z3MkT5fZRf1K1je/rnQ/UduYHI9zdqeJyW1vbfBY7h4DqxCYc50MUCCpQGUCdPj30LQi6+jGB9Y/+NDhiGje/PW2xI1cpw6bOTp7A0AVWoZbF3Zn2oMUbK+E7edGZvslRXPGQjUd4utjAtSVu7QTeDiQGFGE8acoMTylfw7EBVB7AuJ51yJYYE0/UwRZT/0niBoADGP/o8CmDP8AHgXr/ykrh7ToBgebjHP1vQDA/lHcNHIH1cZ2RwAz2JCwHQJFqTEZNHJ2kF9nNINE+kcxWXqSCfaz9/oT+Ew8dLanbaQJuKxdVWzJZs="
+  file_glob: true
+  file: dist/zeroc*
+  skip_cleanup: true
+  on:
+    tags: true
