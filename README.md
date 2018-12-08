@@ -10,6 +10,6 @@ This can be used to create installable binary packages as an alternative to comp
 
 To build a different version of IcePy:
 
-    docker run --rm -v $PWD/dist:/dist builder /build.sh VERSION
+    docker run --rm -v $PWD/dist:/dist builder VERSION
 
 Packages will be copied to `$PWD/dist`.
