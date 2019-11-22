@@ -1,5 +1,5 @@
-Ubuntu 16.04 Zeroc Ice Python Builder
-=====================================
+Ubuntu 16.04 Zeroc Ice Python 3 Builder
+=======================================
 
 Builds Zeroc Ice wheel for Ubuntu 16.04.
 
