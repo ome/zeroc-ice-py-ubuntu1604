@@ -11,8 +11,9 @@ RUN apt-get update && \
         libdb++-dev \
         libdb-dev \
         lsb-release \
-        python-dev \
-        python-pip \
+        python3-dev \
+        python3-pip \
+        python3-wheel \
         software-properties-common
 
 RUN apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 5E6DA83306132997
@@ -23,7 +24,6 @@ RUN apt-get update && \
     zeroc-ice-all-runtime \
     zeroc-ice-all-dev
 
-RUN pip install wheel
 RUN mkdir /dist
 ADD build.sh /
 CMD ["/build.sh"]
